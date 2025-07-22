@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --prime-color: #2FB297;
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #35404E;
+    --transition: .3s;
+    --transition2: .6s;
+    --pere-color: #2a2a2a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-image: url(preview-profile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 12%;
+}
+
+.logo a{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu li a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--black-color);
+    transition: var(--transition);
+}
+
+.menu li a:hover{
+    color: var(--prime-color);
+}
+
+.social_icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social_icon i{
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   font-size: 1.2rem; 
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   background-color: var(--prime-color);
+   color: var(--white-color);
+   transition: var(--transition);
+}
+
+.social_icon i:hover{
+    color: var(--prime-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.bars{
+    display: none;
+}
+
+/* HERO CONTENT SECTION */
+.hero_content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 5% 12%;
+    height: 80vh;
+}
+
+.hero_content h2{
+    font-size: 1.2rem;
+    color: var(--prime-color);
+    font-weight: 500;
+}
+
+.hero_content h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+
+}
+
+.hero_content p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--pere-color);
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    font-size: 1.3rem;
+}
+
+button:hover{
+    box-shadow: 0 0 10px var(--pere-color);
+}
+
+.hero_content button{
+    margin: 20px 0;
+}
