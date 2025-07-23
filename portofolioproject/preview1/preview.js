@@ -11,3 +11,19 @@ const toggle = document.getElementById('menu-toggle');
   toggle.addEventListener('click', () => {
     menu.classList.toggle('show');
   });
+
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      // Stop observing so it doesn't keep firing
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1 // Adjust this if needed
+});
+
+document.querySelectorAll('.hidden').forEach(el => {
+  observer.observe(el);
+});
