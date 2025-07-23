@@ -407,6 +407,7 @@ nav .right a span {
     padding: 15px;
     box-shadow: var(--box-shadow);
     gap: 20px; /* jarak antar ikon */
+    z-index: 999;
   }
 
   nav .right.show {
