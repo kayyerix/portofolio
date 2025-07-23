@@ -1,0 +1,55 @@
+/* Import Remix Icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.0/remixicon.css');
+
+/* Services Section */
+.services-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
