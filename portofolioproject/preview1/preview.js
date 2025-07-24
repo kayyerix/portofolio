@@ -5,13 +5,6 @@ var typed = new Typed('#text',{
     loop: true,
 })
 
-const toggle = document.getElementById('menu-toggle');
-  const menu = document.querySelector('nav .right');
-
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-
   const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
